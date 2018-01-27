@@ -5,20 +5,31 @@
   "devDependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1",
     "jest-react-native": "^18.0.0",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.2.0",
+    "rimraf": "^2.6.2"
   },
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "test": "node node_modules/jest/bin/jest.js"
+    "tsc": "tsc -w",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run tsc"
   },
   "jest": {
     "preset": "react-native"
   },
   "dependencies": {
+    "@types/react": "^16.0.35",
+    "@types/react-native": "^0.52.5",
+    "@types/react-navigation": "^1.0.29",
+    "@types/react-redux": "^5.0.14",
+    "@types/redux": "^3.6.0",
     "react": "16.2.0",
     "react-native": "0.52.0",
-    "react-native-itunes": "^0.5.0"
+    "react-native-itunes": "^0.5.0",
+    "react-navigation": "^1.0.0-beta.27",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
   }
 }
