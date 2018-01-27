@@ -3,4 +3,4 @@ Please include
 ```javascrpit
 mres.setHeader('Access-Control-Allow-Origin', '*');
 ```
-in Server/index.tsx in metro module because you're having problem on school wifi with CORS and bundling
+in Server/index.tsx in ```_processDeltaRequest``` in the metro module because you're having problem on school wifi with CORS and bundling
